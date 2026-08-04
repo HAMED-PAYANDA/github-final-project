@@ -74,14 +74,18 @@ simple-investment-calculator/
 ⚙️ Quick Start Usage
 To run the calculator locally, ensure you have Python 3 installed on your machine.
 	1.	Clone the repository:
+```text
 git clone [https://github.com/HAMED-PAYANDA/simple-investment-calculator.git](https://github.com/HAMED-PAYANDA/simple-investment-calculator.git)
-
-	1.	Navigate to the directory:
+```
+	2.	Navigate to the directory:
+```text
 cd simple-investment-calculator
+```
 
-	1.	Execute the Python script:
+	3.	Execute the Python script:
+```text
 python3 islamic_investment.py
-
+```
 👤 Authors & Credits
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
