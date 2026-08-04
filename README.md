@@ -1,26 +1,88 @@
-# Simple Investment Calculator
+<div align="center">
 
-A simple calculator that replaces the traditional interest-based simple interest formula with an Islamic investment (profit-sharing) model.
+# 🧮 Halal Investment Calculator
 
-## Input:
-- `P`: Capital Investment (P) → the money you invested
-- `PR`: Profit Rate (PR) → expected annual profit rate (%) (if using rate mode)
-- `T`: Time Period (T) → duration in years (if using rate mode)
-- Total Business Investment → total capital of all partners (if using partnership mode)
-- `TP`: Total Business Profit (TP) → actual profit earned (if using partnership mode)
+A financial calculator designed to replace traditional interest-based (Riba) models with an ethical, Islamic investment (profit-sharing) framework.
 
-## Output
-- Profit → your gain from investment
-- Total → your original capital + your profit
-- `Formula`
-- `Mode 1 — Profit Rate:
-Profit = P \times \frac{PR}{100} \times T
-Total = P + Profit`
- - `Mode 2 — Partnership (Profit-Sharing):
-Profit\_Share = \frac{P}{Total\_Investment} \times TP
-Total = P + Profit\_Share`
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Finance](https://img.shields.io/badge/Finance-Islamic_Banking-0052CC?style=for-the-badge&logo=revolut&logoColor=white)](#)
+[![Algorithm](https://img.shields.io/badge/Algorithm-Profit_Sharing-181717?style=for-the-badge)](#)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
-## Islamic Finance Note
-This calculator avoids interest (riba) and instead follows profit-sharing concepts like:
-	-	Mudarabah (profit-sharing)
-	-	Musharakah (joint partnership)
+</div>
+
+---
+
+## 📌 Project Overview
+
+This repository features a localized, simple investment calculator built on **Islamic Finance** principles. Instead of utilizing standard compound or simple interest formulas—which rely on predetermined risk-free rates—this application models real-world business partnerships. 
+
+The calculator provides two distinct modes to calculate financial growth: a projected profit rate model, and a dynamic partnership (profit-sharing) model based on actual business performance.
+
+---
+
+## 🕌 Islamic Finance Principles
+
+This project strictly avoids traditional interest (*Riba*) and is instead grounded in ethical business frameworks:
+* **Mudarabah (Profit-Sharing):** A financial partnership where one party provides capital and the other provides expertise, sharing generated profits based on a pre-agreed ratio.
+* **Musharakah (Joint Venture):** A joint enterprise in which all partners share the profit or loss of the joint business according to their initial capital contribution.
+
+---
+
+## 🎛️ Calculator Inputs & Outputs
+
+### System Inputs
+| Variable | Name | Description | Used In |
+| :--- | :--- | :--- | :--- |
+| **`P`** | Capital Investment | Your individual financial contribution | Both Modes |
+| **`PR`** | Profit Rate | Expected annual profit rate percentage | Mode 1 |
+| **`T`** | Time Period | Duration of the investment in years | Mode 1 |
+| **`Total Investment`** | Total Business Capital | The combined capital from all partners | Mode 2 |
+| **`TP`** | Total Business Profit| The actual monetary profit earned by the business | Mode 2 |
+
+### System Outputs
+* **Profit:** Your calculated share of the gains from the investment.
+* **Total:** Your original capital investment plus your generated profit.
+
+---
+
+## 🧮 Mathematical Models
+
+### Mode 1: Expected Profit Rate
+Used for forecasting based on a projected annual profit percentage.
+
+$$\text{Profit} = P \times \frac{PR}{100} \times T$$
+
+$$\text{Total} = P + \text{Profit}$$
+
+### Mode 2: Partnership (Profit-Sharing)
+Used for exact dividend calculations based on the percentage of capital owned in a joint venture.
+
+$$\text{Profit Share} = \left( \frac{P}{\text{Total Investment}} \right) \times TP$$
+
+$$\text{Total} = P + \text{Profit Share}$$
+
+---
+
+## 📁 Repository Structure
+
+```text
+simple-investment-calculator/
+├── investment_calculator.py   # Core calculation logic and application
+└── README.md                  # Project documentation
+```
+⚙️ Quick Start Usage
+To run the calculator locally, ensure you have Python installed on your machine.
+	1.	Clone the repository:
+git clone [https://github.com/HAMED-PAYANDA/simple-investment-calculator.git](https://github.com/HAMED-PAYANDA/simple-investment-calculator.git)
+
+	1.	Navigate to the directory:
+cd simple-investment-calculator
+
+	1.	Execute the Python script:
+python investment_calculator.py
+
+👤 Author
+Hamed Payanda
+•	GitHub: @HAMED-PAYANDA
+Developed to bridge algorithmic logic with ethical financial models.
