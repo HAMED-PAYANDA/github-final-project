@@ -34,11 +34,11 @@ This project strictly avoids traditional interest (*Riba*) and is instead ground
 ### System Inputs
 | Variable | Name | Description | Used In |
 | :--- | :--- | :--- | :--- |
-| **`P`** | Capital Investment | Your individual financial contribution | Both Modes |
-| **`PR`** | Profit Rate | Expected annual profit rate percentage | Mode 1 |
-| **`T`** | Time Period | Duration of the investment in years | Mode 1 |
-| **`Total Investment`** | Total Business Capital | The combined capital from all partners | Mode 2 |
-| **`TP`** | Total Business Profit| The actual monetary profit earned by the business | Mode 2 |
+| **`p`** | Capital Investment | Your individual financial contribution | Both Modes |
+| **`pr`** | Profit Rate | Expected annual profit rate percentage | Mode 1 |
+| **`t`** | Time Period | Duration of the investment in years | Mode 1 |
+| **`total_investment`** | Total Business Capital | The combined capital from all partners | Mode 2 |
+| **`tp`** | Total Business Profit| The actual monetary profit earned by the business | Mode 2 |
 
 ### System Outputs
 * **Profit:** Your calculated share of the gains from the investment.
@@ -51,16 +51,16 @@ This project strictly avoids traditional interest (*Riba*) and is instead ground
 ### Mode 1: Expected Profit Rate
 Used for forecasting based on a projected annual profit percentage.
 
-$$\text{Profit} = P \times \frac{PR}{100} \times T$$
+$$\text{Profit} = p \times \frac{pr}{100} \times t$$
 
-$$\text{Total} = P + \text{Profit}$$
+$$\text{Total} = p + \text{Profit}$$
 
 ### Mode 2: Partnership (Profit-Sharing)
 Used for exact dividend calculations based on the percentage of capital owned in a joint venture.
 
-$$\text{Profit Share} = \left( \frac{P}{\text{Total Investment}} \right) \times TP$$
+$$\text{Profit Share} = \left( \frac{p}{\text{total\_investment}} \right) \times tp$$
 
-$$\text{Total} = P + \text{Profit Share}$$
+$$\text{Total} = p + \text{Profit Share}$$
 
 ---
 
@@ -68,11 +68,11 @@ $$\text{Total} = P + \text{Profit Share}$$
 
 ```text
 simple-investment-calculator/
-├── investment_calculator.py   # Core calculation logic and application
+├── islamic_investment.py      # Core calculation logic and application
 └── README.md                  # Project documentation
 ```
 ⚙️ Quick Start Usage
-To run the calculator locally, ensure you have Python installed on your machine.
+To run the calculator locally, ensure you have Python 3 installed on your machine.
 	1.	Clone the repository:
 git clone [https://github.com/HAMED-PAYANDA/simple-investment-calculator.git](https://github.com/HAMED-PAYANDA/simple-investment-calculator.git)
 
@@ -80,9 +80,12 @@ git clone [https://github.com/HAMED-PAYANDA/simple-investment-calculator.git](ht
 cd simple-investment-calculator
 
 	1.	Execute the Python script:
-python investment_calculator.py
+python3 islamic_investment.py
 
-👤 Author
+👤 Authors & Credits
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
-Developed to bridge algorithmic logic with ethical financial models.
+•	Developed to bridge algorithmic logic with ethical financial models.
+Original Foundation:
+•	Upkar Lidder (IBM)
+•	Completed as part of the IBM CognitiveClass.ai Software Engineering Curriculum.
