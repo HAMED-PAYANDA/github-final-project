@@ -89,7 +89,7 @@ simple-investment-calculator/
 ├── CONTRIBUTING.md            # Instructions for contributing to the project
 ├── investment-profit.sh       # Bash script implementation of the calculator
 ├── islamic_investment.py      # Core Python calculation logic and application
-├── LICENSE                    # MIT License file
+├── LICENSE                    # Apache 2.0 License file
 └── README.md                  # Project documentation
 ```
 ---
