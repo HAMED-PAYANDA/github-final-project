@@ -7,6 +7,7 @@ A financial calculator designed to replace traditional interest-based (Riba) mod
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Finance](https://img.shields.io/badge/Finance-Islamic_Banking-0052CC?style=for-the-badge&logo=revolut&logoColor=white)](#)
 [![Algorithm](https://img.shields.io/badge/Algorithm-Profit_Sharing-181717?style=for-the-badge)](#)
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 </div>
@@ -71,7 +72,9 @@ simple-investment-calculator/
 ├── islamic_investment.py      # Core calculation logic and application
 └── README.md                  # Project documentation
 ```
-⚙️ Quick Start Usage
+---
+
+## ⚙️ Quick Start Usage
 To run the calculator locally, ensure you have Python 3 installed on your machine.
 
 1.	Clone the repository:
@@ -87,10 +90,16 @@ cd simple-investment-calculator
 ```text
 python3 islamic_investment.py
 ```
-👤 Authors & Credits
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-•	Developed to bridge algorithmic logic with ethical financial models.
-Original Foundation:
-•	Upkar Lidder (IBM)
-•	Completed as part of the IBM CognitiveClass.ai Software Engineering Curriculum.
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Developed to bridge algorithmic logic with ethical financial models.
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+
