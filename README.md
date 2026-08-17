@@ -83,12 +83,21 @@ Used for exact dividend calculations based on the percentage of capital owned in
 * **Total** = `p` + **Profit Share**
 ---
 
+## 📸 Visual Proof
+
+**Version Control & Development Workflow**  
+*A terminal view demonstrating the Git version control workflow utilized during the development of this project. It highlights best practices such as configuring developer identity, creating isolated branches for bug fixes, pushing to the remote repository, and performing fast-forward merges back to the `main` branch.*
+![Git Workflow](demo1.png)
+
+---
+
 ## 📁 Repository Structure
 
 ```text
 simple-investment-calculator/
 ├── CODE_OF_CONDUCT.md         # Community guidelines for contributors
 ├── CONTRIBUTING.md            # Instructions for contributing to the project
+├── demo1.png                  # Visual proof of the development/Git workflow
 ├── investment-profit.sh       # Bash script implementation of the calculator
 ├── islamic_investment.py      # Core Python calculation logic and application
 ├── LICENSE                    # Apache 2.0 License file
