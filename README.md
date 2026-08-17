@@ -70,15 +70,17 @@ graph TD
 
 ## 🧮 Mathematical Models
 
-Mode 1: Expected Profit Rate
+### Mode 1: Expected Profit Rate
 Used for forecasting based on a projected annual profit percentage.
-‭$$\text{Profit} = p \times \frac{pr}{100} \times t$$‬‭‬‭‬‭‬
-‭$$\text{Total} = p + \text{Profit}$$‬‭‬‭‬
-Mode 2: Partnership (Profit-Sharing)
-Used for exact dividend calculations based on the percentage of capital owned in a joint venture.
-‭$$\text{Profit Share} = \left( \frac{p}{\text{total\_investment}} \right) \times tp$$‬
-‭$$\text{Total} = p + \text{Profit Share}$$‬‭‬‭‬
 
+* **Profit** = `p` × (`pr` / 100) × `t`
+* **Total** = `p` + **Profit**
+
+### Mode 2: Partnership (Profit-Sharing)
+Used for exact dividend calculations based on the percentage of capital owned in a joint venture.
+
+* **Profit Share** = (`p` / `total_investment`) × `tp`
+* **Total** = `p` + **Profit Share**
 ---
 
 ## 📁 Repository Structure
