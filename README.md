@@ -30,6 +30,27 @@ This project strictly avoids traditional interest (*Riba*) and is instead ground
 
 ---
 
+## 🏗️ Application Workflow
+
+```mermaid
+graph TD
+    A[User Input] --> B{Select Investment Model}
+    
+    B -->|Mode 1: Expected Profit| C[Mudarabah<br/>Projected Rate]
+    B -->|Mode 2: Profit-Sharing| D[Musharakah<br/>Joint Venture]
+
+    C --> E[Inputs: Capital, Rate, Time]
+    D --> F[Inputs: Capital, Total Capital, Total Profit]
+
+    E --> G[Process: Apply projected annual percentage]
+    F --> H[Process: Calculate exact equity percentage]
+
+    G --> I[Output: Profit & Total Balance]
+    H --> I
+```
+
+---
+
 ## 🎛️ Calculator Inputs & Outputs
 
 ### System Inputs
@@ -49,19 +70,14 @@ This project strictly avoids traditional interest (*Riba*) and is instead ground
 
 ## 🧮 Mathematical Models
 
-### Mode 1: Expected Profit Rate
+Mode 1: Expected Profit Rate
 Used for forecasting based on a projected annual profit percentage.
-
-$$\text{Profit} = p \times \frac{pr}{100} \times t$$
-
-$$\text{Total} = p + \text{Profit}$$
-
-### Mode 2: Partnership (Profit-Sharing)
+‭$$\text{Profit} = p \times \frac{pr}{100} \times t$$‬‭‬‭‬‭‬
+‭$$\text{Total} = p + \text{Profit}$$‬‭‬‭‬
+Mode 2: Partnership (Profit-Sharing)
 Used for exact dividend calculations based on the percentage of capital owned in a joint venture.
-
-$$\text{Profit Share} = \left( \frac{p}{\text{total\_investment}} \right) \times tp$$
-
-$$\text{Total} = p + \text{Profit Share}$$
+‭$$\text{Profit Share} = \left( \frac{p}{\text{total\_investment}} \right) \times tp$$‬
+‭$$\text{Total} = p + \text{Profit Share}$$‬‭‬‭‬
 
 ---
 
@@ -69,7 +85,11 @@ $$\text{Total} = p + \text{Profit Share}$$
 
 ```text
 simple-investment-calculator/
-├── islamic_investment.py      # Core calculation logic and application
+├── CODE_OF_CONDUCT.md         # Community guidelines for contributors
+├── CONTRIBUTING.md            # Instructions for contributing to the project
+├── investment-profit.sh       # Bash script implementation of the calculator
+├── islamic_investment.py      # Core Python calculation logic and application
+├── LICENSE                    # MIT License file
 └── README.md                  # Project documentation
 ```
 ---
@@ -78,23 +98,29 @@ simple-investment-calculator/
 To run the calculator locally, ensure you have Python 3 installed on your machine.
 
 1.	Clone the repository:
-```text
+```bash
 git clone [https://github.com/HAMED-PAYANDA/simple-investment-calculator.git](https://github.com/HAMED-PAYANDA/simple-investment-calculator.git)
 ```
 2.	Navigate to the directory:
-```text
+```bash
 cd simple-investment-calculator
 ```
 
 3.	Execute the Python script:
-```text
+```bash
 python3 islamic_investment.py
 ```
+4. (Optional) Execute the Bash script:
+```bash
+chmod +x investment-profit.sh
+./investment-profit.sh
+```
+
 ---
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ## 👤 Author
 
